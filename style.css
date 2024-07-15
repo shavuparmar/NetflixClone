@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel:wght@200;300;400;600;700;800;900&display=swap');
+
+* {
+     margin: 0;
+     padding: 0;
+
+}
+
+body {
+     background-color: black;
+}
+
+.main {
+     background-image: url("Images/Main-Banner.jpg");
+
+     background-position: center center;
+     background-size: max(1200px, 100vw);
+     background-repeat: no-repeat;
+     height: 644px;
+     position: relative;
+
+
+     background-attachment: fixed;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+.main .box {
+     height: 644px;
+     width: 100%;
+     opacity: 0.69;
+     position: absolute;
+     top: 0;
+     background-color: black;
+}
+
+nav {
+
+     display: flex;
+     max-width: 80vw;
+     margin: auto;
+     justify-content: space-between;
+     align-items: center;
+     height: 100px;
+}
+
+nav img {
+     height: 100px;
+     position: relative;
+     z-index: 10;
+}
+
+nav button {
+     position: relative;
+     z-index: 10;
+}
+
+.hero {
+     display: flex;
+     height: calc(100% - 100px);
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     color: white;
+     position: relative;
+     gap: 23px;
+     padding: 0 30px;
+
+}
+
+
+.Btn {
+     padding: 3px 5px;
+     background-color: white;
+     border: none;
+     height: 40px;
+     width: 100px;
+     margin-left: 10px;
+     cursor: pointer;
+}
+
+.btn-english {
+     background-color: transparent;
+     color: white;
+     border: 1px solid grey;
+     height: 30px;
+}
+
+.btn-sml {
+     border-radius: 2.5px;
+     height: 35px;
+     width: 100px;
+     background-color: red;
+     color: white;
+     font-size: 14px;
+     font-weight: bold;
+
+}
+
+.btn-big {
+     font-size: 20px;
+     font-weight: bold;
+     background-color: red;
+     color: white;
+     width: 160px;
+     height: 45px;
+     border-radius: 2.5px;
+     cursor: pointer;
+}
+
+
+.main input {
+     font-size: 13px;
+     padding: 15px 25px;
+
+     width: 270px;
+     border-radius: 2.5px;
+     background-color: rgba(36, 32, 32, 0.63);
+     color: white;
+     border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.main input::placeholder {
+     color: white;
+     cursor: pointer;
+
+}
+
+
+
+
+
+.hero>:first-child {
+     font-size: 40px;
+     font-weight: 900;
+}
+
+.hero>:nth-child(2) {
+     font-size: 24px;
+     font-weight: 200px;
+}
+
+.hero> :nth-child(3) {
+     font-size: 16px;
+     font-weight: 200px;
+
+}
+
+.separation {
+     height: 7px;
+     background-color: rgb(46, 44, 44);
+     position: relative;
+     z-index: 20;
+
+}
+
+
+
+
+
+.FristSection {
+     display: flex;
+     justify-content: center;
+     max-width: 70vw;
+     margin: auto;
+     color: white;
+
+     align-items: center;
+
+
+}
+
+
+
+
+.secImage {
+     position: relative;
+}
+
+.secImage img {
+     width: 555px;
+     position: relative;
+     z-index: 10;
+}
+
+.secImage video {
+     position: absolute;
+     top: 85px;
+     right: 2px;
+     background-color: transparent;
+}
+
+.FristSection>div {
+     display: flex;
+     flex-direction: column;
+}
+
+.FristSection>div :first-child {
+     font-size: 48px;
+     font-weight: bolder;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.FristSection>div :nth-child(2) {
+     font-size: 20px;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.feq {
+     background-color: black;
+     color: white;
+
+}
+
+.feq h2 {
+     text-align: center;
+     font-size: 44px;
+     padding: 30px 30px;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.feqbox {
+     background-color: rgba(77, 74, 74, 0.473);
+     max-width: 60vw;
+     margin: auto;
+     display: flex;
+     justify-content: space-between;
+     padding: 10px 10px;
+     align-items: center;
+     margin-top: 15px;
+     cursor: pointer;
+     font-size: 20px;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     transition: all 0.5 ease-in;
+}
+
+.feqbox:hover {
+     background-color: rgba(77, 74, 74, 0.692);
+}
+
+
+.ThirdSection video{
+     
+     top: 33px;
+     width: 352px;
+     right: 98px;
+     
+}
+
+
+@media screen and (max-width:820px) {
+     .FristSection {
+          flex-wrap: wrap;
+     }
+     .secImage img {
+          width: 303px;
+     }     
+
+     .secImage video {
+         width: 250px;
+         top: 75px;
+         right: 13px;
+     }
+}
+
+
+/* Fonts */
+@media  screen and (max-width:820px) {
+     .hero > :first-child{
+          font-size: 34px;
+          
+     }
+
+     .hero>:nth-child(2){
+     font-size: 24px;
+     }
+
+
+     .FristSection> div :first-child{
+          font-size: 34px;
+        margin-top: 30px;
+     }
+
+     .FristSection >div :nth-child(2){
+          font-size: 15px;
+     }
+
+
+     .SecondSection > div :nth-child(1){
+          font-size: 34px;
+          padding: 10px 10px;
+     }
+     .SecondSection > div :nth-child(2){
+          font-size: 20px;
+          margin-bottom: 10px;
+     }
+
+     .ThirdSection > div :first-child{
+          font-size: 33px;
+     }
+.ThirdSection > div :nth-child(2){
+     font-size: 17px;
+}
+
+}
